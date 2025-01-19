@@ -12,7 +12,7 @@ async function runCLI() {
       type: 'list',
       name: 'template',
       message: 'What type of project do you want the starter files for?',
-      choices: ['Basic HTML Website', 'NextJS Project', 'React App', 'Python App (without env)'],
+      choices: ['Basic-HTML', 'NextJS Project', 'React App', 'Python-App-(without env)'],
     },
     {
       type: 'input',
@@ -27,8 +27,21 @@ async function runCLI() {
   const destination = path.join(process.cwd(), projectName);
 
   if (!fs.existsSync(source)) {
-    console.error(`Template "${template}" not found.`);
-    return;
+    if (template === 'NextJS Project' ) {
+        console.log("Trying to execute commands")
+        execSync(`npx create-next-app@latest ${projectName}`, { stdio: 'inherit' });
+        console.log("Done!")
+        return;
+    }else if (template === 'React App' ){
+        console.log('Creating a React app...');
+        execSync(`npx create-react-app ${projectName}`, { stdio: 'inherit' });
+        console.log('React app created successfully!');
+        return;
+    }
+    else{
+        console.error(`Template "${template}" not found.`);
+        return;
+    }
   }
 
   copyFolderSync(source, destination);
