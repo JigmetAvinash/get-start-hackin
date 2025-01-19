@@ -1,6 +1,6 @@
 {
   "name": "get-start-hackin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A CLI tool to generate boilerplate code for projects",
   "main": "bin/index.js",
   "scripts": {
