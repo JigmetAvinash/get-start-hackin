@@ -1,24 +1,25 @@
 {
-  "name": "get-start-hackin",
-  "version": "1.0.5",
-  "description": "A CLI tool to generate boilerplate code for projects",
-  "main": "bin/index.js",
-  "scripts": {
-    "start": "node bin/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "cli",
-    "boilerplate",
-    "code generator"
-  ],
-  "author": "Avinash",
-  "license": "MIT",
-  "bin": {
-    "hackstart": "./bin/index.js"
-  },
-  "dependencies": {
-    "commander": "^13.0.0",
-    "inquirer": "^12.3.2"
-  }
+	"name": "get-start-hackin",
+	"version": "1.0.5",
+	"description": "A CLI tool to generate boilerplate code for projects",
+	"main": "./bin/index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node bin/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"cli",
+		"boilerplate",
+		"code generator"
+	],
+	"author": "Avinash",
+	"license": "MIT",
+	"bin": {
+		"hackstart": "./bin/index.js"
+	},
+	"dependencies": {
+		"commander": "^13.0.0",
+		"inquirer": "^9.2.3"
+	}
 }
