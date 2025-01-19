@@ -4,7 +4,7 @@
 
 ![Banner](https://cloud-4igvnsnrp-hack-club-bot.vercel.app/0image.png "Get Start Hackin' : CLI TOOL")
 
-- **🔖 Latest Version**: v1.0.1  
+- **🔖 Latest Version**: v1.0.3
 - **📈 Uptime Status**: Coming Soon  
 - **📦 Check it out on [npmjs.org](https://www.npmjs.com/package/get-start-hackin)**
 
